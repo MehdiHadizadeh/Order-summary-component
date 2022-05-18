@@ -103,7 +103,8 @@ body {
 .order-name {
   color: var(--dark-blue);
   font-weight: var(--font-black);
-  margin-bottom: 0.125rem;
+  display: block;
+  /* margin-bottom: 0.125rem; */
 }
 
 .order-price {
@@ -135,7 +136,7 @@ a.order-change:hover {
   border: none;
   font-size: var(--normal-font-size);
   cursor: pointer;
-  font-weight: var(--font-bold);
+  font-weight: var(--font-medium);
 }
 
 .payment-btn {
