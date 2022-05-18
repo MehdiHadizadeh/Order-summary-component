@@ -1,0 +1,204 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+  /* HSL color mode */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --bright-blue-light: hsl(245, 83%, 68%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --white: #fff;
+
+  /*========== Font and typography ==========*/
+  --normal-font-size: 16px;
+  --body-font: "Red Hat Display", sans-serif;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-bold: 700;
+  --font-black: 900;
+}
+
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  background-image: url(../images/pattern-background-desktop.svg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue);
+  background-size: contain;
+}
+
+/*==================== Order ====================*/
+.order-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--card-BG);
+  border-radius: 1.25rem;
+  max-width: 450px;
+  background-color: var(--white);
+  box-shadow: 0 1.5rem 3rem 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-image {
+  height: 220px;
+  width: 100%;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 3rem 3rem 0;
+}
+
+.card-title {
+  font-size: 28px;
+  color: var(--dark-blue);
+  font-weight: var(--font-black);
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  font-weight: var(--font-medium);
+  line-height: 1.625rem;
+  color: var(--desaturated-blue);
+  margin-bottom: 1.5rem;
+}
+
+.order-detail {
+  display: grid;
+  grid-template-columns: 0.4fr 1.1fr 0.4fr;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: var(--very-pale-blue);
+  border-radius: 0.75rem;
+}
+
+.order-image {
+  width: 48px;
+  height: 48px;
+}
+
+.order-info {
+  text-align: left;
+}
+
+.order-name {
+  color: var(--dark-blue);
+  font-weight: var(--font-black);
+  margin-bottom: 0.125rem;
+}
+
+.order-price {
+  color: var(--desaturated-blue);
+  font-weight: var(--font-medium);
+}
+
+a.order-change {
+  color: var(--bright-blue);
+  font-weight: var(--font-bold);
+  text-align: right;
+  transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+  font-size: 14px;
+}
+
+a.order-change:hover {
+  text-decoration: none;
+  color: var(--bright-blue-light);
+}
+
+.card-footer {
+  padding: 0 3rem 3rem;
+}
+
+.btn {
+  font-family: var(--body-font);
+  display: block;
+  border: none;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  font-weight: var(--font-bold);
+}
+
+.payment-btn {
+  color: var(--white);
+  background-color: var(--bright-blue);
+  width: 100%;
+  padding: 1rem 0;
+  margin: 1.875rem auto;
+  border-radius: 0.75rem;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  box-shadow: 0px 20px 20px hsl(245deg 75% 52% / 20%);
+}
+
+.payment-btn:hover {
+  background-color: var(--bright-blue-light);
+}
+
+.cancel-btn {
+  background-color: var(--white);
+  color: var(--desaturated-blue);
+  margin: 0 auto;
+  transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+}
+
+.cancel-btn:hover {
+  color: var(--dark-blue);
+}
+
+@media (max-width: 576px) {
+  .card {
+    max-width: 327px;
+  }
+
+  .card-image {
+    height: 160px;
+  }
+
+  .card-body {
+    padding: 2.375rem 1.5625rem 0;
+  }
+
+  .order-detail {
+    padding: 1rem;
+    grid-template-columns: 0.5fr 1fr 0.4fr;
+  }
+
+  .card-title {
+    font-size: 22px;
+    margin-bottom: 1rem;
+  }
+
+  .card-footer {
+    padding: 0 1.5625rem 2.375rem;
+  }
+
+  .payment-btn {
+    margin: 1.5rem auto;
+  }
+
+  .order-name,
+  .order-price {
+    font-size: 14px;
+  }
+}
