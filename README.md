@@ -10,7 +10,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-- [Solution URL](https://www.frontendmentor.io/solutions/qr-code-component-S19BOG1Dq)
+- [Solution URL](https://www.frontendmentor.io/solutions/order-summary-component-SS8fhwugKL)
 - [Live Site URL](https://mehdihadizadeh.github.io/Order-summary-component/)
 
 ## My Process
