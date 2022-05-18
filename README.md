@@ -24,7 +24,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### What I learned
 
-    CSS media queries which are the easiest and most common way to create a mobile responsive web site
+CSS media queries which are the easiest and most common way to create a mobile responsive web site
 
 ## Author
 
